@@ -1,52 +1,54 @@
-export default function Homepage() {
+import Image from "next/image";
+import { Button } from "../ui/button";
+import Link from "next/link";
+import { CarouselCard } from "../product/CarouselCard";
+import { products } from "../product/products";
+import { posts } from "../post/post";
+import BlogsCard from "@/app/Blogs/BlogsCards";
+
+interface TitleProps {
+  title: string;
+  href: string;
+  sideText: string;
+}
+
+const Title = ({ title, href, sideText }: TitleProps) => (
+  <div className="flex  px-4 lg:px-0 flex-col mt-20  md:flex-row mb-10 items-start justify-start md:items-center md:justify-between">
+    <h2 className="text-2xl font-bold mb-4 md:mb-0">{title}</h2>
+    <Link href={href} className="font-semibold text-muted-foreground underline">
+      {sideText}
+    </Link>
+  </div>
+);
+
+export default function Homepage() { 
   return (
-    <main className="relative w-full h-screen flex items-center bg-[#fdfbf7] overflow-hidden">
-      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
-        {/* Left Side: Content */}
-        <div className="z-10 space-y-6 animate-fade-in">
-          <span className="text-sm font-bold uppercase tracking-widest text-orange-600">
-            New Season Arrival
-          </span>
-          <h1 className="text-6xl md:text-8xl font-serif font-light text-slate-900 leading-tight">
-            The Art of <br /> 
-            <span className="italic font-normal">Living Well</span>
-          </h1>
-          <p className="text-lg text-slate-600 max-w-md leading-relaxed">
-            Discover our curated collection of sustainable essentials designed to bring balance and beauty to your everyday routine.
+    <div className="min-h-screen container mt-5 lg:mt-35  px-4 lg:px-40">
+      <div className="flex flex-col lg:flex-row  justify-between gap-10">
+        <div className=" my-8 lg:w-2/5  text-center lg:text-left ">
+          <h1 className="text-4xl text-[#1A2A44] mb-4 lg:text-6xl lg:mb-8 font-extrabold">Mondern Interior Desgin Studio </h1>
+          <p className="mb-6">
+            Furniture is an essential component of any living space ,
+            providing functionality , comfort , and aesthetic appeal
           </p>
-          <div className="flex gap-4 pt-4">
-            <button className="px-8 py-4 bg-slate-900 text-white font-medium rounded-sm hover:bg-slate-800 transition-all duration-300">
-              Shop Collection
-            </button>
-            <button className="px-8 py-4 border border-slate-900 text-slate-900 font-medium rounded-sm hover:bg-slate-50 transition-all duration-300">
-              Our Story
-            </button>
+          <div className="flex  justify-center lg:justify-start gap-4">
+            <Button asChild className=" rounded-full hover:bg-orange-400 bg-orange-300 px-8 py-6 text-base font-bold">
+              <Link href={'/'} >Shop Now</Link>
+            </Button>
+            <Button asChild variant={"outline"} className="rounded-full px-8  text-[#1A2A44] py-6 text-base font-bold ">
+              <Link href={'/'}>Explore</Link>
+            </Button>
+
           </div>
         </div>
+        <Image width={900} height={200}  className="w-300 lg:w-3/5 h-65 lg:h-auto" src="/imges/photo1.png" alt="Placeholder" />
+      </div> 
+    
 
-        {/* Right Side: Visual */}
-        <div className="relative h-[600px] w-full hidden lg:block">
-          {/* Decorative background shape */}
-          <div className="absolute -top-10 -right-10 w-64 h-64 bg-orange-100 rounded-full blur-3xl opacity-50"></div>
-          
-          {/* Main Image Container */}
-          <div className="relative z-10 w-full h-full bg-slate-200 rounded-2xl overflow-hidden shadow-2xl transition-transform hover:scale-[1.02] duration-500">
-            <img 
-              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=1000" 
-              alt="Featured Fashion" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          
-          {/* Small Floating "Badge" */}
-          <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl rounded-lg z-20 hidden xl:block">
-            <p className="text-slate-400 text-xs font-bold uppercase">Trusted By</p>
-            <p className="text-slate-900 font-serif text-xl">10k+ Customers</p>
-          </div>
-        </div>
+      <CarouselCard products={products} /> 
 
-      </div>
-    </main>
+      <Title  title="Recent Blog " href="/Blogs" sideText="View All Posts" />
+      <BlogsCard posts={posts} />
+    </div>
   );
 }

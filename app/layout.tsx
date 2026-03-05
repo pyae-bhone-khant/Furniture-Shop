@@ -34,16 +34,17 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body className="antialiased min-h-screen">
+      <body className="antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen flex flex-col">
             <Navbar />
-            <main className=" flex-1">
+          <div className=" flex flex-col">
+            <main className=" ">
+              
               {children}
             </main>
             <Footer />
