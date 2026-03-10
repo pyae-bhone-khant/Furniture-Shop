@@ -1,4 +1,4 @@
-"use client"
+
 
 import photo1 from "../../public/imges/photo1.png";
 import photo2 from "../../public/imges/photo4.webp";
@@ -9,7 +9,20 @@ import photo6 from "../../public/imges/photo9.webp";
 import photo7 from "../../public/imges/shopping.webp";
 import photo8 from "../../public/imges/photo4.webp";
 
-
+export const filterList = {
+  types: [
+    { id: "uuid1", label: "seating" },
+    { id: "uuid2", label: "lying" },
+    { id: "uuid3", label: "entertainment" },
+    { id: "uuid4", label: "tables" },
+    { id: "uuid5", label: "storage" },
+  ],
+  categories: [
+    { id: "uuid1", label: "Wooden" },
+    { id: "uuid2", label: "Bamboo" },
+    { id: "uuid3", label: "Metal" },
+  ],
+};
 
 export const products = [ 
     {
@@ -35,7 +48,7 @@ export const products = [
         discount: 5,
         rating: 4.8,
         inventory: 8,
-        status: "active"
+        status: "sold"
       },
       {
         id: 3,

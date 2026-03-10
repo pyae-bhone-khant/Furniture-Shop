@@ -1,4 +1,4 @@
-import { isHmrRefresh } from "next/dist/server/app-render/work-unit-async-storage.external";
+
 
 export const SiteConfig = {
   name: "Furniture Shop",

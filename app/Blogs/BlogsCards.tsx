@@ -9,7 +9,7 @@ interface PostsProps {
 export default function BlogsCard({ posts }: PostsProps) {
     return (
      
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-12 px-6 md:px-12 max-w-screen-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-12 px-6 md:px-0 max-w-screen-2xl mx-auto">
             {posts.slice(0, 3).map((post) => (
                 <Link
                     key={post.id}

@@ -7,7 +7,7 @@ import EmailForm from "./new-letter";
 export default function Footer() {
   return (
     <footer className="w-full mt-10 border-t border-border bg-background">
-      <div className="px-4 py-12 lg:px-40">
+      <div className="px-4 py-12 lg:px-30">
       
         <div className="flex flex-col lg:flex-row justify-between gap-12">
           

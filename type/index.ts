@@ -1,3 +1,4 @@
+import { Label } from '@/components/ui/label';
 export interface NavItem {
      title? : string 
      href? : string
@@ -34,3 +35,17 @@ rating: number;
 inventory: number;
 status: "active" | "inactive";
 };
+
+export type category = { 
+      id: string;
+      label : string;
+} 
+
+export interface UserType {
+  id: string | number;
+  firstName: string;
+  lastName: string;
+  username: string;
+  email: string;
+  imageUrl: string;
+}
