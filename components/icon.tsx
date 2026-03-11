@@ -1,5 +1,5 @@
 import { DashboardIcon, DiscordLogoIcon, ExitIcon, GearIcon, HomeIcon } from "@radix-ui/react-icons"
-import { GithubIcon, Heart, HeartIcon, Layers2, Menu, Minus, MoveLeft, PlusIcon, SendHorizontal, Settings, SettingsIcon, StarIcon, Store, Twitter } from "lucide-react"
+import { Delete, DeleteIcon, GithubIcon, Heart, Layers2, Menu, Minus, MoveLeft, PlusIcon, SendHorizontal, SettingsIcon, ShoppingCart, StarIcon, Store, Trash2, Twitter } from "lucide-react"
 
 export type IconProp = React.SVGProps<SVGSVGElement>
 
@@ -21,5 +21,7 @@ export const Icons = {
   Setting : SettingsIcon,
   GearIcon : GearIcon,
   Exit : ExitIcon,
+  Shopping : ShoppingCart,
+  Delete : Trash2,
   
 }

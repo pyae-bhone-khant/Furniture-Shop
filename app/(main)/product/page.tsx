@@ -1,7 +1,7 @@
-import { products } from "@/components/product/products";
+import { filterList, products } from "@/components/product/products";
 import ProductFilter from "./productfilter";
 import ProductCard from "./productcard";
-import { filterList } from '../../components/product/products';
+
 import { Pagination } from "@/components/component/Pagination";
 
 

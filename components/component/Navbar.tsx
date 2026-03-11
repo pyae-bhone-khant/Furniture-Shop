@@ -4,6 +4,7 @@ import MobileNav from "./MobileNav"
 import { ModeToggle } from "../modetoggle"
 import AuthDropdown from "@/app/Auth/AuthDropdown"
 import { User } from "../user/user"
+import CartSheet from "./CartSheep"
 
 export default function  Navbar() {
     return (
@@ -11,8 +12,8 @@ export default function  Navbar() {
      <nav className=" container flex items-center  h-16 lg:px-30">
         <MainNav items = {SiteConfig.mainNav} />
         <MobileNav items={SiteConfig.mainNav} />
-        <div className="flex items-center  gap-2.5 flex-1 mr-8 lg:mr-0 justify-end">
-
+        <div className="flex items-center  gap-2.5 flex-1 mr-8 md:mr-0 lg:mr-0 justify-end">
+         <CartSheet />
         <ModeToggle />
         <AuthDropdown user={User} />
         </div>

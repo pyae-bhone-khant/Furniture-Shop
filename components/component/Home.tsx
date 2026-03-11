@@ -4,8 +4,9 @@ import Link from "next/link";
 import { CarouselCard } from "../product/CarouselCard";
 import { products } from "../product/products";
 import { posts } from "../post/post";
-import BlogsCard from "@/app/Blogs/BlogsCards";
-import ProductCard from "@/app/product/productcard";
+import BlogsCard from "@/app/(main)/Blogs/BlogsCards";
+import ProductCard from "@/app/(main)/product/productcard";
+
 
 interface TitleProps {
   title: string;

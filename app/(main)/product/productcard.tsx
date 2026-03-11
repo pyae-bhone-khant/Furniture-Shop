@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { product } from '../../type/index';
+
 import {
   Card,
   CardAction,
@@ -14,6 +14,7 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 import Image from 'next/image';
 import { Icons } from '@/components/icon';
 import { cn } from '@/lib/utils';
+import { product } from '@/type';
 
 
 interface ProductCardProps extends React.HtmlHTMLAttributes<HTMLDivElement> {

@@ -40,15 +40,8 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
-            <Navbar />
-          <div className=" flex flex-col">
-            <main className=" ">
-              
-              {children}
-            </main>
-            <Footer />
-          </div>
+        >   
+           {children}
         </ThemeProvider>
       </body>
     </html>

@@ -48,4 +48,24 @@ export interface UserType {
   username: string;
   email: string;
   imageUrl: string;
+} 
+
+
+export type ProductCart = {
+  id: string;
+  name: string;
+  price: string; 
+  inventory: number;
+  quantity: number;
+  storeId: string;
+  image:  {
+    id: string;
+  name: string;
+  url: string;
+  };
+  category: string;
+  subcategory: string;
+  storeName: string;
+  storeStripeAccountId: string;
 }
+

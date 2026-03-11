@@ -3,25 +3,21 @@
 import { products } from "@/components/product/products";
 import { Button } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { Section } from "lucide-react";
-import { useParams } from "next/navigation"
+import { useParams } from "next/navigation";
 import ProductCard from "../productcard";
 import Link from "next/link";
 import { Icons } from "@/components/icon";
-import { Card, CardContent } from "@/components/ui/card"
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 import {
     Carousel,
     CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
+    CarouselItem
+} from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import React from "react";
 import Image from "next/image";

@@ -6,22 +6,11 @@ import {
     DropdownMenuContent,
     DropdownMenuGroup,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuPortal,
-    DropdownMenuSeparator,
-    DropdownMenuShortcut,
-    DropdownMenuSub,
-    DropdownMenuSubContent,
-    DropdownMenuSubTrigger,
-    DropdownMenuTrigger,
+    DropdownMenuLabel, DropdownMenuSeparator,
+    DropdownMenuShortcut, DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu"
 import {
-    Avatar,
-    AvatarBadge,
-    AvatarFallback,
-    AvatarGroup,
-    AvatarGroupCount,
-    AvatarImage,
+    Avatar, AvatarFallback, AvatarImage
 } from "@/components/ui/avatar"
 import { Icons } from "@/components/icon"
 
@@ -100,7 +89,7 @@ export default function AuthDropdown({ user }: userProps) {
                     
                     <DropdownMenuGroup>
                         <DropdownMenuItem asChild>
-                            <Link href={'#'} className="flex justify-between w-full">
+                            <Link href={'/Auth/login/'} className="flex justify-between w-full">
                                 <span className="flex items-center">
                                     <Icons.Exit className="size-4 mr-2" aria-hidden="true" />
                                     Log out
