@@ -1,9 +1,3 @@
-import photo1 from "../../public/imges/photo1.png";
-import photo2 from "../../public/imges/photo4.webp";
-import photo3 from "../../public/imges/photo6.webp";
-
-
-
 
 export const CartItems = [
   {
@@ -17,12 +11,12 @@ export const CartItems = [
       {
         id: "img-001",
         name: "sofa-front-view",
-        url : photo2
+        url :  '/imges/photo6.webp'
       },
       {
         id: "img-002",
         name: "sofa-side-view",
-        url: photo1
+        url: '/imges/photo6.webp'
       }
     ],
     category: "Furniture",
@@ -41,7 +35,7 @@ export const CartItems = [
       {
         id: "img-003",
         name: "chair-black",
-        url: photo3
+        url: '/imges/photo6.webp'
       }
     ],
     category: "Wooden",

@@ -1,4 +1,3 @@
-import { Label } from '@/components/ui/label';
 export interface NavItem {
      title? : string 
      href? : string
@@ -12,16 +11,15 @@ export interface NavItemWithCh  extends NavItem {
 export type  MainNavItem = NavItemWithCh;
 
 export type post  ={
-id: number;
-author: string;
-title: string;
-content: string;
-image: string;
-body: string;
-updated_at: string;
-tags: string[];
-
-} ;
+  id: number;
+  author: string;
+  title: string;
+  content: string;
+  image: string;
+  body: string;
+  updated_at: string;
+  tags: string[];
+}
 
 export type product = {
 id: number;
@@ -39,7 +37,7 @@ status: "active" | "inactive";
 export type category = { 
       id: string;
       label : string;
-} 
+}
 
 export interface UserType {
   id: string | number;
@@ -48,7 +46,7 @@ export interface UserType {
   username: string;
   email: string;
   imageUrl: string;
-} 
+}
 
 
 export type ProductCart = {
@@ -67,5 +65,5 @@ export type ProductCart = {
   subcategory: string;
   storeName: string;
   storeStripeAccountId: string;
-}
+};
 

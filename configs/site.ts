@@ -12,7 +12,7 @@ export const SiteConfig = {
           href: "/products/living-room",
           description: "Explore sofas, coffee tables, TV units, and more."
         },
-        {
+        { 
           title: "Bedroom",
           href: "/products/bedroom",
           description: "Discover beds, wardrobes, nightstands, and dressers."
