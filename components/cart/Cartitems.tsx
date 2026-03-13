@@ -1,3 +1,10 @@
+import photo1 from "../../public/imges/photo1.png";
+import photo2 from "../../public/imges/photo4.webp";
+import photo3 from "../../public/imges/photo6.webp";
+
+
+
+
 export const CartItems = [
   {
     id: "uuid-prod-001",
@@ -10,12 +17,12 @@ export const CartItems = [
       {
         id: "img-001",
         name: "sofa-front-view",
-        url : "https://cdn.britannica.com/36/123536-050-95CB0C6E/Variety-fruits-vegetables.jpg"
+        url : photo2
       },
       {
         id: "img-002",
         name: "sofa-side-view",
-        url: "https://cdn.britannica.com/36/123536-050-95CB0C6E/Variety-fruits-vegetables.jpg"
+        url: photo1
       }
     ],
     category: "Furniture",
@@ -34,7 +41,7 @@ export const CartItems = [
       {
         id: "img-003",
         name: "chair-black",
-        url: "https://cdn.britannica.com/36/123536-050-95CB0C6E/Variety-fruits-vegetables.jpg"
+        url: photo3
       }
     ],
     category: "Wooden",

@@ -12,7 +12,7 @@ function CartItemscom({ cart }: CartProp) {
          <div className="flex  ">
 
             <Image
-    src={cart.image[0].url}
+    src={cart.image.url}
     alt={cart.name}
     width={64}
     height={64}
